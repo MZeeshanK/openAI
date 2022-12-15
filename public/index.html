@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/spinner.css" />
+
+    <script src="js/main.js" defer></script>
+    <title>openAI Image Genearator || MZeeshanK</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <h1>OpenAI Image Genrator</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="showcase">
+        <form id="image-form">
+          <label for="prompt">Describe the Image:</label>
+          <input type="text" id="prompt" placeholder="Enter Text" />
+          <!-- size -->
+          <label for="size">Select size:</label>
+          <select name="size" id="size">
+            <option value="small">Small</option>
+            <option value="medium" selected>Medium</option>
+            <option value="large">Large</option>
+          </select>
+          <button type="submit" class="btn">Generate</button>
+        </form>
+      </section>
+
+      <section class="image">
+        <div class="image-container">
+          <h2 class="msg"></h2>
+          <img src="" alt="" id="image" />
+        </div>
+      </section>
+    </main>
+
+    <div class="spinner"></div>
+  </body>
+</html>
